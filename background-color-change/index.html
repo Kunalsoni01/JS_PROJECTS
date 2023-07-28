@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background_color_change</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            color: white;
+            background-color: rgb(39, 133, 200);
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="ChangeColors()">click me</button>
+    </div>
+    
+    <script>
+        var count =0;
+        function ChangeColors(){
+            var col = ["blue","red","green","yellow","black","orange","purple"];
+
+            document.getElementsByTagName("body")[0].
+            style.background = col[count++]
+
+            if(count>col.length-1)
+            count = 0;
+
+        }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <div id="modelbox">
+        <img src="images/model.jpeg" width="100%">
+        <div class="modeltext">
+            <h2>get flat 15% off</h2>
+            <small>on all products</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, molestias!</p>
+
+            <form>
+                <input type="text" placeholder="email id" id="">
+                <button>suscribe</button>
+            </form>
+        </div>
+        <img src="images/close.jpg" class="close" onclick="closeicon()">
+    </div>
+
+
+    <script>
+        let modelboxx = document.getElementById("modelbox");
+
+        document.onmouseleave = function() {
+            modelboxx.style.display = "block";
+        }
+        function closeicon(){
+            modelboxx.style.display = "none";
+        }
+    </script>
+</body>
+</html>
